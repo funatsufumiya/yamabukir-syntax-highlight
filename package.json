@@ -1,0 +1,26 @@
+{
+    "name": "yamabukir-syntax-highlight",
+    "displayName": "YamabukiR Syntax Highlight",
+    "description": "YamabukiR Syntax Highlight",
+    "publisher": "funatsu-fumiya",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.47.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "yab",
+            "aliases": ["YamabukiR Layout Definition", "yab"],
+            "extensions": [".yab"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "yab",
+            "scopeName": "source.yab",
+            "path": "./syntaxes/yab.tmLanguage.json"
+        }]
+    }
+}

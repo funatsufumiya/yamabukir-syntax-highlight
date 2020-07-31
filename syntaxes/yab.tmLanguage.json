@@ -1,0 +1,57 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "YamabukiR Layout Definition",
+	"scopeName": "source.yab",
+	"patterns": [
+		{
+			"match": "^;(.*)$",
+			"name": "comment.line.semicolon"
+		},
+        {
+            "begin": "'",
+            "end": "'",
+            "name": "string.quoted.single"
+        },
+        {
+            "begin": "\"",
+            "end": "\"",
+            "name": "string.quoted.double"
+        },
+		{
+			"match": "^\\[([^\\[\\]]+)\\]",
+			"name": "entity.name.class"
+		},
+		{
+			"match": "^<.>",
+			"name": "entity.name.function"
+		},
+		{
+			"match": "[逃入空後消挿上左右下家終前次無]",
+			"name": "constant.language"
+		},
+		{
+			"match": "[ぁあぃいぅうぇえぉおかがきぎくぐけげこごさざしじすずせぜそぞただちぢっつづてでとどなにぬねのはばぱひびぴふぶぷへべぺほぼぽまみむめもゃやゅゆょよらりるれろわをんヴ、。゛゜「」ー・！”＃＄％＆’（）＊＋，－．／０１２３４５６７８９：；＜＝＞？＠ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ［￥］＾＿｀‘ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ｛｜｝～]",
+			"name": "string.unquoted"
+		},
+		{
+            "match": "(?<=(?:^|,))([SCAW])(?=[^,]+(?:,|$))",
+            "captures": {
+                "1": {
+                    "name": "constant.language.modifier"
+                }
+			}
+		},
+		{
+            "match": "([V])([0-9A-Fa-f]+)",
+            "name": "constant.numeric"
+		},
+		{
+            "match": "([機])([1]?[0-9])",
+            "name": "constant.numeric"
+		},
+		{
+            "match": "([設])([1]?[0-9])",
+            "name": "constant.numeric"
+		}
+	]
+}
