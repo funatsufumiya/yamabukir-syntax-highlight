@@ -4,6 +4,10 @@
     "description": "YamabukiR Syntax Highlight",
     "publisher": "funatsu-fumiya",
     "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/funatsufumiya/yamabukir-syntax-highlight.git"
+    },
     "engines": {
         "vscode": "^1.47.0"
     },
