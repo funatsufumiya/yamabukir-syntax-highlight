@@ -10,7 +10,7 @@
         "url": "https://github.com/funatsufumiya/yamabukir-syntax-highlight.git"
     },
     "engines": {
-        "vscode": "^1.47.0"
+        "vscode": "^1.31.0"
     },
     "categories": [
         "Programming Languages"
